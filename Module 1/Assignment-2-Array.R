@@ -1,0 +1,76 @@
+#Module 1: Assignment 2 - Array
+
+View(customer_churn)
+
+#Tasks to be performed:
+#Create an array as per the given data:
+#a. An array named array_total_charges that contains the first 10 values from
+#the total charges column
+
+head(customer_churn$TotalCharges,10)->array_total_charges
+array_total_charges
+class(array_total_charges)
+array(array_total_charges)->array_total_charges
+array_total_charges
+class(array_total_charges)
+
+##or 
+array_total_charges<-array(CC1$TotalCharges[1:10],c(1,10,1))
+
+
+#b. An array names array_monthly_charges that contains first five values
+#from the monthly charges column.
+
+head(customer_churn$MonthlyCharges,5)->array_monthly_charges
+array_monthly_charges
+class(array_monthly_charges)
+
+array(array_monthly_charges)->array_monthly_charges
+array_monthly_charges
+class(array_monthly_charges)
+#or
+
+array_monthly_charges<-array(customer_churn$MonthlyCharges[1:5],c(1,5,1))
+class(array_monthly_charges)
+View(array_monthly_charges)
+#2. Create an array using placement dataset that comprises of:
+#a. Data of first 15 values from salary column.
+
+View(Placement_Data)
+
+head(Placement_Data$salary,15)->array_salary
+array_salary
+
+class(array_salary)
+
+array(array_salary)->array_salary
+array_salary
+
+class(array_salary)
+
+#array(c(Placement_Data$salary[1:15],Placement_Data$mba_p[1:5],Placement_Data$etest_p[1:10]))->array_placement
+#View(array_placement)
+###or 
+array(c(pdfc$salary[1:15],pdfc$mba_p[1:15], pdfc$etest_p[1:10]))->array_placement
+array_placement
+
+
+#b.Data of first five values from mba_p column.
+
+head(Placement_Data$mba_p,5)->mba_pass
+mba_pass
+class(mba_pass)
+
+array(mba_pass)->mba_pass
+mba_pass
+class(mba_pass)
+
+#c. Data of first 10 values from e_test column.
+
+head(Placement_Data$etest_p,10)->etest
+etest
+class(etest)
+
+array(etest)->etest
+etest
+class(etest)

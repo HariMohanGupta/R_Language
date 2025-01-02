@@ -1,0 +1,66 @@
+
+View(Placement_Data)
+
+#Module 1: Assignment 7 - If-Else
+#Problem Statement:
+#Sam is trying to understand some of the datasets for building software that gives output
+#based on certain conditions. Sam lists down the tasks that need to be performed.
+
+#Tasks to be performed:
+
+#  Using the placement dataset, perform the following tasks:
+
+#  a. Check the value of 95th row of status column.
+#If the value is "Placed", then print "The student is placed from campus
+#placement drives".
+#If it's "Not Placed", then print "The student is not placed from campus
+#placement drives."
+#If it's "NA", then print "The data of the student is not available."
+
+if(Placement_Data$status[95]=="Placed") {
+  print("The student is placed from campus placement drives")
+}else {
+  if(Placement_Data$status[95]=="Not Placed") {
+    print("The student is not placed from campus placement drives")
+  }else {
+    print("The data of the student is not available")
+  }
+}
+
+
+#b. Check the value of 64th row of hsc_s column.
+#If it is "Science", then print "The subject opted by the student is Science."
+#If it is "Commerce", then print "The subject opted by the student is Commerce."
+#If it is "Arts", then print "The subject opted by the student is Arts."
+  
+ if(Placement_Data$hsc_s[64]=="Science") {
+   print("The subject opted by the student is Science")
+ } else{
+   if(Placement_Data$hsc_s[64]=="Commerce") {
+     print("The subject opted by the student is Commerce")
+     
+   } else{
+     if(Placement_Data$hsc_s[64]=="Arts") {
+       print("The subject opted by the student is Arts")
+     }
+   }
+ }
+ 
+#c. Check the 28th row of Payment method column:
+#  If it is "Credit card (automatic)", then print"The customer is using credit
+#card as their payment method."
+#If it is "Mailed check", then print "The customer is using mailed check for payment."
+#If it is "Electronic check", then print "The customer is using electronic check
+#for payment."
+
+if(customer_churn$PaymentMethod[28]=="Credit card (automatic)"){
+  print("The customer is using credit card as their payment method")
+}else{
+  if(customer_churn$PaymentMethod[28]=="Mailed check"){
+    print("The customer is using mailed check for payment")
+  }else{
+    if(customer_churn$PaymentMethod[28]=="Electronic check"){
+      print("The customer is using electronic check for payment")
+    }
+  }
+}
